@@ -6,10 +6,10 @@ const Home = () => {
   return (
     <div>
       <div className="grid grid-cols-12">
-        <div className='h-screen shadow-lg bg-slate-700 text-white text-lg font-bold text-center py-5 row-span-12 col-span-2'>
+        <div className='h-screen shadow-lg bg-slate-700 text-white text-lg font-bold text-center py-5 col-span-2 hidden sm:hidden md:hidden lg:block '>
           <SideBar />
         </div>
-        <div className='shadow-lg bg-white text-lg font-bold p-10 col-span-10'>
+        <div className='shadow-lg bg-white text-lg font-bold p-10  col-span-12 md:col-span-12 lg:col-span-10 '>
           <MainContent />
         </div>
       </div>
