@@ -2,7 +2,7 @@ import React from 'react'
 
 const Form = () => {
     return (
-        <div className='bg-white text-black w-2/5 m-auto shadow-2xl p-10'>
+        <div className='bg-white text-black w-4/12 m-auto shadow-2xl p-10 absolute top-1/2 left-1/2 z-50' style={{ transform: 'translate3d(-50%, -50%, 0)' }}>
             <div className='flex justify-between items-center mb-10'>
                 <span className='text-red text-lg font-bold text-slate-600 capitalize'>New contact</span>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-slate-600 cursor-pointer" viewBox="0 0 20 20" fill="currentColor">
@@ -27,12 +27,12 @@ const Form = () => {
                     <label for='address'>Address</label>
                     <textarea className='bg-slate-100 text-slate-600 pl-2 text-lg font-normal capitalize py-2 rounded focus:outline-none' rows="4" cols="50"></textarea>
                 </div>
-                <div className='form-group'>
-                    <button className='capitalize'>save</button>
+                <div className='form-group flex'>
+                    <button className='capitalize bg-blue-600 text-white px-3 py-2'>save</button>
                     <button className='capitalize'>close</button>
                 </div>
 
-        </form>
+            </form>
 
 
         </div >

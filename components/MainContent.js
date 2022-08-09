@@ -1,7 +1,6 @@
 import React from 'react'
 import Form from './Form';
 import Table from './Table';
-// import Table from './Table'
 
 const MainContent = () => {
   return (
@@ -21,7 +20,7 @@ const MainContent = () => {
           <input type='text' placeholder='search contacts' className='bg-slate-100 text-slate-600 pl-2 text-lg font-normal capitalize py-2 rounded focus:outline-none' />
         </div>
         <div className='form-group'>
-          <label for="cars" className='capitalize text-lg font-bold text-slate-600 mr-2'>per page:</label>
+          <label for="cars" className='capitalize text-lg font-bold text-slate-300 mr-2'>per page:</label>
           <select id="cars" name="cars" className='bg-slate-100 text-slate-600 text-lg font-normal capitalize px-5 py-2 rounded focus:outline-none'>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -29,13 +28,13 @@ const MainContent = () => {
             <option value="4">4</option>
           </select>
         </div>
-
       </form>
 
+      {/* Table component */}
       <Table />
 
-      {/* test add the form here for now */}
-      {/* <Form /> */}
+      {/* Form Component */}
+      <Form />
     </>
   )
 }
