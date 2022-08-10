@@ -1,13 +1,20 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Form from './Form';
 import Table from './Table';
 
 const MainContent = () => {
+
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => {
+    setClick(prev => !prev);
+  }
+
   return (
     <>
       <header className='flex justify-between items-center pb-10'>
         <h3 className='text-2xl font-normal text-slate-600 uppercase font-sans '>All contacts (11)</h3>
-        <button className='text-lg bg-slate-600 text-white text-sm font-sans rounded font-semibold uppercase py-3 px-10'>new contact</button>
+        <div onClick={handleClick} className='text-lg bg-slate-600 text-white text-sm font-sans rounded font-semibold uppercase py-3 px-10 cursor-pointer'>new contact</div>
       </header>
       <div className='bg-pink-200 flex justify-between items-center px-5 py-5 mb-5'>
         <span className='text-red text-lg font-normal text-slate-600'>Contact deleted! You have successfully deleted the contact.</span>
@@ -34,7 +41,13 @@ const MainContent = () => {
       <Table />
 
       {/* Form Component */}
-      <Form />
+
+      {
+        click && (
+          <Form setClick={setClick} />
+        )
+      }
+  
     </>
   )
 }
