@@ -25,7 +25,7 @@ const Form = () => {
                 </div>
                 <div className='form-group flex flex-col'>
                     <label for='address'>Address</label>
-                    <textarea className='bg-slate-100 text-slate-600 pl-2 text-lg font-normal capitalize py-2 rounded focus:outline-none' rows="4" cols="50"></textarea>
+                    <input type='text' className='bg-slate-100 text-slate-600 pl-2 text-lg font-normal capitalize py-2 rounded focus:outline-none mb-5' />
                 </div>
                 <div className='form-group flex'>
                     <button className='capitalize bg-blue-600 text-white px-3 py-2'>save</button>
